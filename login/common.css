@@ -1,0 +1,153 @@
+@font-face {
+    src: url("/fwk/font.ttf");
+    font-family: "Ubuntu Light";
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: "Ubuntu Light", "Noto Sans", "Segoe UI", "Ubuntu", "Roboto", sans-serif;
+    background: #333;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+#image {
+    background-color: #000;
+    height: 100%;
+    background-image: url("image.jpg");
+    background-size: cover;
+}
+
+#box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+center {
+    text-align: center;
+}
+
+.logo {
+    width: 48px;
+    vertical-align: middle;
+}
+
+.title {
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.separator {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+    .separator {
+        display: none;
+    }
+}
+
+input[type="text"], input[type="password"] {
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid #2d7e2d;
+    margin-top: 10px;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border: 1px solid #3eae3e;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #58c458;
+    background-color: #58c458;
+}
+
+button {
+    background: #2d7e2d;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 1px solid #2d7e2d;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3eae3e;
+    border: 1px solid #3eae3e;
+}
+
+button:active {
+    background: transparent;
+    border: 1px solid #58c458;
+}
+
+#loggingin {
+    background: #111;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Ubuntu Light", "Noto Sans", "Segoe UI", "Ubuntu", "Roboto", sans-serif;
+}
+
+#status {
+    background: #333;
+    border: 1px #000 solid;
+    -webkit-appearance: none;
+    border-radius: 999px;
+}
+
+#status::-moz-progress-bar {
+    background: #58c458;
+    border-radius: 999px;
+}
+
+#status::-webkit-progress-value {
+    background: #58c458;
+    border-radius: 999px;
+}
+
+#status::-ms-fill {
+    background: #58c458;
+    border-radius: 999px;
+}
+
+.link {
+    color: #58c458;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #3eae3e;
+}
+
+.link:active {
+    color: #2d7e2d;
+}

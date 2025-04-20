@@ -1,0 +1,193 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+iframe {
+    height: calc(100% - 34px);
+    width: 100%;
+    margin-top: 34px;
+}
+
+@font-face {
+    src: url("./font.ttf");
+    font-family: "Ubuntu Light";
+}
+
+* {
+    font-family: "Ubuntu Light", sans-serif;
+    cursor: default;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+#topbar {
+    background-color: #333;
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+    height: 24px;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#loadbar {
+    background-color: #333;
+    color: white;
+    padding: 5px 20px;
+    font-size: 14px;
+    height: 24px;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#loadbar-title {
+    display: inline-block;
+    position: fixed;
+    top: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: calc(100% - 70px);
+}
+
+#loadbar-logo {
+    display: inline-block;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+
+#familine-home {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 200ms;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#links {
+    position: fixed;
+    right: 15px;
+    display: inline-block;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 200ms;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#familine-home:hover, .link:hover, .link.active {
+    background-color: #2d7e2d;
+}
+
+#familine-logo, .link-logo {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+#loader {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 34px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 700px) {
+    #links {
+        display: none;
+    }
+    #topbar {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1150px) {
+    .link-text {
+        display: none;
+    }
+}
+
+.link:not(.active), .link:not(.active) *, #familine-home, #familine-home * {
+    cursor: pointer;
+}
+
+.link-logo {
+    filter: none;
+    transition: filter 200ms;
+}
+
+.link:hover .link-logo, .link.active .link-logo {
+    filter: contrast(0%) brightness(1000%);
+}
+
+/* -------------- */
+#link-famiwiki:hover, #link-famiwiki.active {
+    background-color: #01abc1;
+}
+
+#link-famiprods:hover, #link-famiprods.active {
+    background-color: #2fca63;
+}
+
+#link-faminews:hover, #link-faminews.active {
+    background-color: #966149;
+}
+
+#link-famipun:hover, #link-famipun.active {
+    background-color: #354c00;
+}
+
+#link-faminey:hover, #link-faminey.active {
+    background-color: #96496d;
+}
+
+#link-cloud:hover, #link-cloud.active {
+    background-color: #ca8524;
+}
+
+@media (max-width: 400px) {
+    #familine-brand {
+        display: none;
+    }
+}

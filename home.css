@@ -1,0 +1,139 @@
+@font-face {
+    src: url("/font.ttf");
+    font-family: "Ubuntu Light";
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #333;
+    color: white;
+}
+
+center {
+    text-align: center;
+    position: relative;
+}
+
+* {
+    font-family: "Ubuntu Light", sans-serif;
+    cursor: default;
+    z-index: 10 !important;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+#loginrq {
+    max-width: 30vw;
+}
+
+hr {
+    border-bottom: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+#content {
+    padding: 50px;
+}
+
+hr.nom {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+}
+
+.service-info {
+    margin-left: 15px;
+}
+
+button {
+    background: #555;
+    color: white;
+    border: 1px #111 solid;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #444;
+    border: 1px #000 solid;
+}
+
+button:active, button:focus {
+    background: #222;
+    border: 1px #000 solid;
+}
+
+#background-escape {
+    margin-top: 100px;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    height: 350px;
+    left: 0;
+    right: 0;
+    z-index: 2 !important;
+    opacity: .5;
+    background-size: cover;
+    background-position-y: 92%;
+}
+
+#content {
+    background-color: #333;
+    z-index: 99 !important;
+    position: relative;
+}
+
+#footer {
+    background-color: #222;
+    z-index: 99 !important;
+    position: relative;
+    padding: 20px;
+}
+
+#banner {
+    background-color: rgba(34, 34, 34, .5);
+    z-index: 99 !important;
+    position: relative;
+}
+
+.alink, .link {
+    color: white;
+    text-decoration: underline;
+}
+
+.alink:hover, .link:hover {
+    opacity: .75;
+}
+
+.alink:active, .link:active {
+    opacity: .5
+}
+
+#logout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999 !important;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

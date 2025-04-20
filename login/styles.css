@@ -1,0 +1,119 @@
+#login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#login-box-inner {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Noto Sans", "Segoe UI", "Ubuntu", "Roboto", sans-serif;
+}
+
+.textbox {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.textbox:hover {
+    border-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    padding: 4px 9px;
+}
+
+.textbox:active, .textbox:focus {
+    border-width: 2px;
+    border-color: rgb(170, 255, 170);
+    padding: 4px 9px;
+}
+
+.textbox {
+    color: inherit;
+    text-decoration: none;
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px;
+    background-color: rgb(250, 250, 250);
+    height: 18px;
+    outline: none;
+}
+
+.button {
+    color: inherit;
+    text-decoration: none;
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px;
+    background-color: rgb(250, 250, 250);
+    height: 18px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    border-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    padding: 4px 9px;
+}
+
+.button:active {
+    border-color: rgb(170, 255, 170);
+    border-width: 2px;
+    padding: 4px 9px;
+}
+
+#error {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px rgba(255, 0, 0, .5) solid;
+    background: rgba(255, 0, 0, .25);
+}
+
+#success {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px rgba(0, 150, 0, .5) solid;
+    background: rgba(0, 150, 0, .25);
+}
+
+.button:disabled, .textbox:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+.link {
+    color: #2d7e2d;
+}
+
+.link:hover {
+    color: #3eae3e;
+}
+
+.link:active {
+    color: #58c458;
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body, #login-box {
+        background: #151515;
+        color: white;
+    }
+    
+    .button, .textbox {
+        color: black;
+        filter: invert(100%);
+    }
+    
+    .button:active, .button:focus, .textbox:active, .textbox:focus {
+        border-color: #540054;
+    }
+}

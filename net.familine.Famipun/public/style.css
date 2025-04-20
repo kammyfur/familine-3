@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+}
+
+.carousel-item {
+    background-size: 100%;
+    height: 75vh;
+}
+
+.carousel-inner {
+    background-color: black;
+}
+
+#content-box {
+    margin: 32px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark {
+    background-color: #333 !important;
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "id": "test",
+        "name": "Il s'agit d'un test",
+        "description": "Ceci est un test pour ajouter un item de réutilisation à Faminey",
+        "conditions": [
+            "Doit être propre",
+            "Doit avoir moins de 5 ans"
+        ],
+        "qty": 2,
+        "price": 2
+    }
+]

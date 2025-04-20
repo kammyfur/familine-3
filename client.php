@@ -1,0 +1,1 @@
+<?php setcookie("clientUI", "true");$hideLinks=true;require_once $_SERVER['DOCUMENT_ROOT'] . "/index.php"; ?>
